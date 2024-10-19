@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About my motivation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Rounded image styles */
+        .rounded-image {
+            border-radius: 5px; /* Adjust the radius as needed */
+            overflow: hidden; /* Hide overflow to ensure rounded corners */
+        }
+
+        body {
+            background-image: url('motivbg.gif');
+            background-size: cover;
+        }
+
+        /* Resized image styles */
+        .resized-image {
+            width: 200px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px;
+        }
+
+        /* Background image */
+        body.motivation-page {
+            background-image: url(motivbg.gif);
+            background-size: cover;
+        }
+        h1 {
+            color: black;
+        }
+        header {
+            color: white;
+        }
+    </style>
+</head>
+<body class="motivation-page">
+    <!-- Grey bar at the top -->
+    <div class="bar top-bar"></div>
+
+    <header>
+        <h1>About my motivation</h1>
+    </header>
+    <main>
+        <section id="motivation">
+            <div class="intro">
+                <div class="text">
+                    <p>My main motivation for taking interest in the field has to do with the satisfaction that I get from making things work, as well as learning something new and applying it to real life. Frankly, it took me quite some time to figure out exactly what sort of IT field I would like to work with. I tried to get into all kinds of things, such as coding, UX/UI design and so on. However, it was only system administration that stuck with me, as it provided me with a (relatively) clear structure to follow, as well as copious amounts of information to learn to be able to understand how networks and PCs work. I also figured that since I used to work part-time as an English tutor, I learnt how to communicate my knowledge with clarity. This definitely contributed to the development of my soft skills and should help me in the future.</p>
+                </div>
+                <div class="rounded-image">
+                    <img src="motivationimage.jpg" alt="Motivation Image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Grey bar at the bottom -->
+    <div class="bar bottom-bar"></div>
+
+    <footer>
+        <p>&copy; 2024 Fomichev Yegor</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

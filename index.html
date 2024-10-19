@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My honest portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('KY13YN.gif');
+            background-size: cover;
+            margin: 0; /* Reset default body margin */
+            padding: 0; /* Reset default body padding */
+        }
+        .intro-container {
+            display: flex;
+            justify-content: space-between; /* Space between intro text and video */
+            align-items: center; /* Center vertically */
+            background-color: rgba(117, 117, 117, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px; /* Added margin between intro and buttons */
+        }
+        .intro {
+            flex: 1; /* Take up remaining space */
+            margin-right: 20px; /* Space between intro and video */
+        }
+        .intro p {
+            background-color: rgb(253, 253, 254);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0; /* Reset margin to remove default paragraph spacing */
+        }
+        .video-container {
+            flex-shrink: 0; /* Prevent shrinking of the video */
+        }
+        .video-container video {
+            width: 300px; /* Adjust the width of the video */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+        }
+        .buttons {
+            margin-top: 20px; /* Added margin above buttons */
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2758c0;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border: none;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        h1 {
+            color: black;
+            margin-top: 0; /* Remove default margin for h1 */
+        }
+        header {
+            color: white;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px; /* Added margin at bottom of header */
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grey bar at the top -->
+    <div class="bar top-bar"></div>
+
+    <header>
+        <h1>My honest portfolio</h1>
+    </header>
+    
+    <main>
+        <div class="intro-container">
+            <section id="intro" class="intro">
+                <p>Welcome to my portfolio! I see myself as a young, educated and, most importantly, motivated person
+                    who's interested in learning about the functioning of IT technologies and how they interact with
+                    millions of users worldwide. I would love to use the knowledge that I gained in the last few years
+                    in practice. I also hope to meet new, inspired, smart people that could teach me even more.</p>
+            </section>
+            <div class="video-container">
+                <video controls style="width: 120px; height: 180px; border-radius: 10px;">
+                    <source src="portvid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <section class="buttons">
+            <button class="button" onclick="location.href='Motivation.html'">My Motivation</button>
+            <button class="button" onclick="location.href='courses.html'">My Courses</button>
+            <button class="button" onclick="location.href='My certificates.html'">My Certificates</button>
+            <button class="button" onclick="location.href='My training.html'">My Training</button>
+            <!-- Add other buttons as needed -->
+        </section>
+    </main>
+
+    <!-- Grey bar at the bottom -->
+    <div class="bar bottom-bar"></div>
+
+    <footer>
+        <p>&copy; 2024 Fomichev Yegor</p>
+    </footer>
+</body>
+</html>
